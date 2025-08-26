@@ -10,14 +10,14 @@
 
 ## ✅ Main Requirements (50 Marks)
 
-### 1. Navbar
+### 1. Navbar ✅
 
 - **Website name & logo** on the left as Figma
 - **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 
 ---
 
-### 2. Hero Section
+### 2. Hero Section ✅
 
 - **Background Gradient** in the Whole Section
 - **A Relevant Logo** at the top-center
@@ -26,7 +26,7 @@
 
 ---
 
-### 2. Main Section
+### 2. Main Section ✅
 
 This Section will have layout as figma
 
@@ -51,7 +51,7 @@ This Section will have layout as figma
  </tr>
 </table>
 
-### Emergency Hotline Section
+### Emergency Hotline Section ✅
 
 - **Show Minimum 6 cards**. Each card will contain:
   - Icon or Image
@@ -62,7 +62,7 @@ This Section will have layout as figma
   - 💗 icon at left
   - **2 buttons** at the bottom: Copy and Call with icons as Figma
 
-### History Section
+### History Section ✅
 
 - **A white Background** in the whole section
 - **History Title with icon** at the top-left as Figma
@@ -70,7 +70,7 @@ This Section will have layout as figma
 
 ---
 
-### 3. Responsiveness (5 Marks)
+### 3. Responsiveness (5 Marks) ✅
 
 - Website should be fully **responsive for mobile devices** (implementation up to you)
 
