@@ -16,11 +16,11 @@ document
     if (e.target.className.includes("copy-btn")) {
       const copyBtn = e.target;
       const copyNumber = copyBtn.parentNode.parentNode.children[2].innerText;
-      // const serviceNameEng =
-      //   callBtn.parentNode.parentNode.children[1].children[1].innerText;
-      //     navigator.clipboard.writeText(copyNumber).then(() => {
-      //       alert(`${serviceNameEng}Hotline Number Copied: ${copyNumber}`);
-      // });
+      const serviceNameEng =
+        callBtn.parentNode.parentNode.children[1].children[1].innerText;
+          navigator.clipboard.writeText(copyNumber).then(() => {
+            alert(`${serviceNameEng}Hotline Number Copied: ${copyNumber}`);
+      });
       const copyCount = getInnerTextId("copy-count");
       const currentCopyCount = Number(copyCount) + 1;
       document.getElementById("copy-count").innerText = currentCopyCount;
