@@ -16,15 +16,15 @@ document
     if (e.target.className.includes("copy-btn")) {
       const copyBtn = e.target;
       const copyNumber = copyBtn.parentNode.parentNode.children[2].innerText;
-      
-        navigator.clipboard.writeText(copyNumber).then(() => {
-          alert(`Hotline Number Copied: ${copyNumber}`);
-    });
-        const copyCount = getInnerTextId("copy-count");
-        const currentCopyCount = Number(copyCount) + 1;
-        document.getElementById("copy-count").innerText = currentCopyCount;
-      console.log(currentCopyCount)
-    };
+      // const serviceNameEng =
+      //   callBtn.parentNode.parentNode.children[1].children[1].innerText;
+      //     navigator.clipboard.writeText(copyNumber).then(() => {
+      //       alert(`${serviceNameEng}Hotline Number Copied: ${copyNumber}`);
+      // });
+      const copyCount = getInnerTextId("copy-count");
+      const currentCopyCount = Number(copyCount) + 1;
+      document.getElementById("copy-count").innerText = currentCopyCount;
+    }
 
     if (e.target.className.includes("call-btn")) {
       const callBtn = e.target;
@@ -41,7 +41,8 @@ document
 
       const currentCoin = Number(coins) - 20;
       document.getElementById("conis").innerText = currentCoin;
-      const serviceNameBng = callBtn.parentNode.parentNode.children[1].children[0].innerText;
+      const serviceNameBng =
+        callBtn.parentNode.parentNode.children[1].children[0].innerText;
       const historyContainer = document.getElementById("history-container");
 
       const now = new Date();
@@ -49,14 +50,19 @@ document
 
       const newHistory = document.createElement("div");
       newHistory.innerHTML = `
-    <div class="flex p-5 justify-between text-[20px] mt-3 items-center bg-gray-100 rounded-md">
-            <div>
-              <p>${serviceNameBng}</p>
-              <p>${callNumber}</p>
+    <div class="p-3 sm:p-5 sm:text-2xl text-sm mt-3 items-center bg-gray-100 rounded-md">
+                <p class="text-left">${serviceNameBng}</p>
+                <p class="text-left">${callNumber}</p>
+                <p class="text-right">${localTimeString}</p>
             </div>
-            <p>${localTimeString}</p>
-          </div>
     `;
       historyContainer.appendChild(newHistory);
     }
+  });
+
+const clearBtn = document
+  .getElementById("clear-btn")
+  .addEventListener("click", function () {
+    const historyContainer = document.getElementById("history-container");
+    historyContainer.innerHTML = "";
   });
