@@ -70,7 +70,7 @@ This Section will have layout as figma
 
 ---
 
-### 3. Responsiveness (5 Marks) ✅
+### 3. Responsiveness (5 Marks) 
 
 - Website should be fully **responsive for mobile devices** (implementation up to you)
 
@@ -78,13 +78,13 @@ This Section will have layout as figma
 
 ## Functionalities
 
-### 4. Heart Icons
+### 4. Heart Icons ✅
 
 - Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
 
 ---
 
-### 5. Call Buttons
+### 5. Call Buttons ✅
 
 - On clicking a card's **Call Button**, following actions will happen:
   - Show an **alert** with a message including the service name and number
@@ -96,7 +96,7 @@ This Section will have layout as figma
 
 ---
 
-### 5. Call History Section
+### 5. Call History Section ✅
 
 - Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
 - A **Clear History button** on the right
@@ -122,7 +122,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 - On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
+- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks) ✅
 
 💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
 
