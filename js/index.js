@@ -28,7 +28,7 @@ document
       const callBtn = e.target;
       const serviceNameEng =
         callBtn.parentNode.parentNode.children[1].children[1].innerText;
-      const callNumber = callBtn.parentNode.parentNode.children[2].innerText;
+      const callNumber = callBtn.parentNode.parentNode.children[2].children[0].innerText;
       const coins = getInnerTextId("conis");
       if (coins <= 0) {
         alert(`❌ আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।`);
@@ -48,11 +48,14 @@ document
 
       const newHistory = document.createElement("div");
       newHistory.innerHTML = `
-    <div class="p-3 sm:p-5 sm:text-2xl text-sm mt-3 items-center bg-gray-100 rounded-md">
-                <p class="text-left">${serviceNameBng}</p>
-                <p class="text-left">${callNumber}</p>
-                <p class="text-right">${localTimeString}</p>
-            </div>
+    <div class="flex justify-between p-2 items-center sm:p-4 mt-3 bg-gray-100 rounded-md">
+    <div>
+    <p class=" sm:text-lg text-[10px]">${serviceNameBng}</p>
+    <p class="sm:text-lg text-[10px]">${callNumber}</p>
+    </div>
+  <span class="sm:text-sm text-[8px]">${localTimeString}</span>
+  
+</div>
     `;
       historyContainer.appendChild(newHistory);
     }
