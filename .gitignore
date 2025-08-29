@@ -1,2 +1,4 @@
 *.html
 *.js 
+config.bat
+node_modules
